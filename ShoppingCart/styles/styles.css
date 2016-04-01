@@ -30,7 +30,6 @@ hr{
 }
 .nav-wrapper {
   line-height: 100px;
-  background: #fff;
   display: inline;
   margin: 0 auto;
 }
@@ -42,9 +41,27 @@ hr{
   color: #000;
   text-decoration: none;
 }
+.login-image,
+.basket-image
+{
+  position: relative;
+  top: 5px;
+  right: 10px;
+  height: 22px;
+}
+.search-image
+{
+  position: relative;
+  top: 15px;
+  right: 10px; 
+}
+.sh
+{
+  position: relative;
+  top: 15px;
+}
 .nav-wrapper a:hover {
-  color: #fff;
-  background: #000;
+  color: #f83;
 }
 .categories li{
   padding: 0;
@@ -69,18 +86,21 @@ hr{
 }
 .content h1{
   font-weight: normal;
+  text-transform: uppercase;
   font-size: 80px;
   margin: 0 auto;
 }
-.content h3{
+.content p{
   font-weight: normal;
   font-size: 25px;
   font-style: italic;
 }
-.content button{
-  margin: 70px auto;
-  background-color: #fff; /* Green */
+.content a{
+  position: relative;
+  top: 40px;
+  background-color: #fff;
   border: ridge #444;
+  text-transform: uppercase; 
   color: #444;
   padding: 20px 32px;
   text-align: center;
@@ -95,21 +115,19 @@ hr{
   text-align: center;
   margin: 170px auto;
 }
-.sign-up-wrapper h2{
+.sign-up-wrapper h1{
   font-weight: normal;
+  text-transform: uppercase;
   font-size: 35px;
   margin: 0 auto;
 }
-.sign-up-wrapper h4{
+.sign-up-wrapper p{
   font-weight: normal;
   font-size: 15px;
   font-style: italic;
 }
-.email-text{
-  margin: 50px auto;
-  background-color: #fff;
-  border: ridge #444;
-  color: #444;
+.email-input-field{
+  border: transparent #444;
   padding: 17px 100px;
   font-size: 16px;
 }
@@ -125,17 +143,27 @@ hr{
 .footer-wrapper{
   margin: 0 auto;
 }
+
 .footer-wrapper div{
-  margin: 40px 20px;
+  margin: 40px 30px;
   display: inline-table;
 }
+
+.site, .shop, .social{
+  border-left: 1px solid #ddd
+}
+
 .footer-wrapper ul {
   font-weight: bold;
   list-style: none;
   margin: 0 auto;
 }
-.footer-wrapper li {
 
+.footer-wrapper .category-title{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer-wrapper li {
   margin: 10px auto;
   font-weight: normal;
   list-style: none;
@@ -147,6 +175,211 @@ hr{
   text-decoration: none;
   color: #444;
 }
-.verticalLine {
-    border-left: thin solid #ddd;
+.twitter-icon{
+  margin: 10px auto;
+  margin-right: 10px;
+  height: 40px;
+}
+.facebook-icon, .instagram-icon{
+  margin: 10px 10px;
+  height: 40px;
+}
+.category a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444;
+}
+.cloth-type, .shopping-bag, .shipping-address-container, .payment-options-container{
+  position: relative;
+  margin: 120px auto 60px auto;
+}
+.cloth-type, .shopping-bag h1, .shipping-address-container h1, .payment-options-container h1{
+  text-transform: uppercase;
+  text-align: center;
+}
+.cloth-type p, .shopping-bag p, .shipping-address-container p, .payment-options-container p{
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 80px; 
+}
+.cloth-type a{
+  text-decoration: underline;
+  color: #444;
+}
+.showed-cloth td{
+  padding-left: 75px;
+  text-align: center;
+}
+.even-row{
+  background: #eee;
+}
+.col-title td{
+  text-transform: uppercase;
+  color: #aaa;
+
+}
+.table-products{
+  margin-top: 90px;
+  border-collapse: collapse;
+}
+.table-products img{
+  border: 1;
+  }
+
+.table-products td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.product-des{
+  padding-left: 30px;
+}
+.product-color{
+  padding-left: 200px; 
+}
+.product-size{
+  padding-left: 80px;  
+}
+.product-qty{
+  padding-left: 80px;
+}
+.product-amount{
+  padding-left: 80px;
+}
+.product-delete{
+  padding-left: 80px;
+}
+.product-img img{
+  max-width: 100px;
+  border:1px solid #ccc;
+
+}
+.product-des h1{
+  font-size: 13px;
+  margin: 0 auto;
+  float: left;
+}
+.product-des p{
+  margin: 0 auto;
+  float: left;
+  font-size: 12px;
+
+}
+.increase-qty{
+  
+  background-color: #000;
+  color: #fff;
+  border:0;
+  width: 20px;
+  position: relative;
+  bottom: 9px; 
+}
+.decrease-qty{
+  background-color: #000;
+  color: #fff;
+  border:0;
+  width: 20px;
+  position: relative;
+  left: 15px;
+  bottom: 6px;
+}
+.product-delete button{
+  background-color: transparent;
+  border:0;
+}
+.total-amount{
+  color: #f83;
+}
+.wave-div{
+  text-align: center;
+  margin-bottom: -50px;
+}
+.shipping-address-container{
+  border-style: ridge;
+  border-color: #fff;
+  height: 900px;
+}
+.shipping-address-form{
+  position: relative;
+  margin: 40px 0px 40px 320px;
+  max-width: 600px;
+  background-color: #fff;
+  height: 600px;
+}
+.shipping-address-form label{
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+.shipping-address-form input{
+  height: 40px;
+}
+
+.shipping-address-form input[type='text'], .shipping-address-form select{
+  width: 100%;
+}
+.shipping-address-form div{
+  margin-top: 30px;
+}
+.name-div input, .location-div input, .contact-div input{
+  max-width: 45%;
+  height: 40px;
+  border-style: thick;
+}
+.last-name-label, .postal-label, .email-label{
+  position:relative;
+  bottom: 30px;
+  left: 60px;
+}
+.last-name-input, .postal-input, .email-input{
+  position: relative;
+  bottom: 40px;
+  left: 330px;
+}
+.billing-label{
+  font-weight: bold;
+  position: relative;
+  left: 180px;
+  top:-13px;
+  text-transform: lowercase;
+}
+.billing-checkbox{
+  position: relative;
+  left: 180px;
+}
+
+.payment-options-container{
+  border-style: ridge;
+  border-color: #fff;
+  height: 700px;
+}
+.total-estimate{
+  margin: 80px 0px 80px 0px;
+}
+.total-estimate label{
+  margin-left: 10px;
+}
+.total-cost-p, .total-cost-label{
+  color: #f83;
+}
+.payment-method-div{
+  margin-left: 30%;
+  text-transform: uppercase;
+}
+.payment-method-div label{
+  font-weight: bold;
+}
+.payment-method-div select{
+  width: 500px;
+  margin-top: 5px;
+}
+.order-btn{
+  margin-top: 40px;
+  margin-left: 41.5%;
+  background-color: #f83;
+  border: solid #f83;
+  color: #fff;
+  padding: 15px 50px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
 }

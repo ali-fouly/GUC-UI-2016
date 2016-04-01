@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+  <head>
+		<title>shopping_cart</title>
+		<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+		<div class="page-background">
+		  <div class="page-container">
+		    <div class="page-wrapper">
+			  	<div class="nav-wrapper">
+	    			<nav class="container">
+				  		<ul class="categories">
+							<li class = "sh"><a href="index.html"><img src="images/SH.png"></a></li>
+							<li><a href="#">Woman</a></li>
+							<li><a href="men.html">Men</a></li>
+							<li><a href="#">Kids</a></li>
+							<li><a href="#">Coming soon</a></li>
+							<li><a href="#">About</a></li>
+				  		</ul>
+				  		<ul class="user">
+							<li><img class="login-image" src="images/Login.png"><a href="#">Log In</a></li>
+							<li><img class="basket-image" src="images/Basket.png"><a href="#">Basket (0)</a></li>
+							<li><a href="#"><img class="search-image" src="images/Search.png"></a></li>
+						</ul>
+					<hr/>
+					</nav>
+			  	</div>
+					<div class="shopping-bag">
+						<h1>your shopping bag</h1>
+						<p>Items reserved for limited time only</p>
+						<table class="table-products">
+							<tr class='col-title'>
+								<td class='product-img'>product</td>
+								<td class='product-des'>description</td>
+								<td class='product-color'>color</td>
+								<td class='product-size'>size</td>
+								<td class='product-qty'>qty</td>
+								<td class='product-amount'>amount</td>
+								<td class='product-delete'>delete</td>
+							</tr>
+							<tr class="odd-row">
+								<td class='product-img'><img src='images/Tshirt.png'></td>
+								<td class='product-des'><h1>floral plimsoll</h1><p>Ref:2514/302</p></td>
+								<td class='product-color'>One Color</td>
+								<td class='product-size'>39</td>
+								<td class='product-qty'>1
+								<button class="increase-qty">+</button> <button class="decrease-qty">-</button></td>
+								<td class='product-amount'>&euro; 99.95</td>
+								<td class='product-delete'><button>X</button></td>
+							</tr>
+							<tr class="even-row">
+								<td class='product-img'><img src='images/Tshirt.png'></td>
+								<td class='product-des'><h1>coated 5 pocket trousers</h1><p>Ref:2514/302</p></td>
+								<td class='product-color'>One Color</td>
+								<td class='product-size'>M</td>
+								<td class='product-qty'>1
+								<button class="increase-qty">+</button> <button class="decrease-qty">-</button></td>
+								<td class='product-amount'>&euro; 169.00</td>
+								<td class='product-delete'><button>X</button></td>
+							</tr>
+							<tr class="odd-row">
+								<td class='product-img'><img src='images/Tshirt.png'></td>
+								<td class='product-des'><h1>oversized studio blouse</h1><p>Ref:2514/302</p></td>
+								<td class='product-color'>Black</td>
+								<td class='product-size'>S</td>
+								<td class='product-qty'>2
+								<button class="increase-qty">+</button> <button class="decrease-qty">-</button></td>
+								<td class='product-amount'>&euro; 299.00</td>
+								<td class='product-delete'><button>X</button></td>
+							</tr>
+
+							<tr class="even-row">
+								<td>
+								<td>
+								<td>
+								<td>
+								<td class='product-sub'>Subtotal: </td>
+								<td class='total-amount'>&euro; 567.95</td>
+								<td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="wave-div">
+						<img src="images/wave.png">
+					</div>
+
+					<div class="shipping-address-container">
+						<h1>shipping address</h1>
+						<p>All fields are required</p>
+						<form class="shipping-address-form">
+						<div>
+							<label>select delivery method</label>
+							<br>
+							<select>
+								<option>DHL International</option>
+							</select>
+							</div>
+							<div class="name-div">
+							<label class="fist-name-label">first name</label>
+							<br>
+							<input type="text" class="first-name-input"></input>
+							<label class="last-name-label">last name</label>
+							<br>
+							<input type="text" class="last-name-input"></input>
+							</div>
+							<div>
+							<label>address (line 1)</label>
+							<br>
+							<input type="text"></input>
+							</div>
+							<div>
+							<label>address (line 2)</label>
+							<br>
+							<input type="text"></input>
+							</div>
+							<div class="location-div">
+							<label>city</label>
+							<br>
+							<input type="text"></input>
+							<label class="postal-label">postal code</label>
+							<br>
+							<input type="text" class="postal-input"></input>
+							</div>
+							<div class="contact-div">
+							<label class="phone-number-label">phone number</label>
+							<br>
+							<input type="text" class="phone-number-input"></input>
+							<label class="email-label">email</label>
+							<br>
+							<input type="text" class="email-input"></input>
+							</div>
+							<div>
+							<input type="checkbox" class="billing-checkbox">
+							<label class="billing-label">Use this address for Billing</label></input>
+							</div>
+						</form>
+					</div>
+					<div class="wave-div">
+						<img src="images/wave.png">
+					</div>
+					<div class="payment-options-container">
+						<h1>payment options</h1>
+						<p>All fields are required</p>
+						<div class="total-estimate">
+							<p>Subtotal:<label class="subtotal-label">&euro;567,95</label></p>
+							<p>Shipping:<label class="shipping-label">&euro;15,00</label></p>
+							<p class="total-cost-p">Total:<label class="total-cost-label">&euro;582,95</label></p>
+						</div>
+						<div class="payment-method-div">
+							<label>select payment method</label>
+							<br>
+							<select>
+								<option>Credit Card</option>
+							</select>
+						</div>
+						<form>
+							<input type="submit" class="order-btn" value="order now"></input>
+						</form>
+					</div>
+					
+					<div class="footer-wrapper">
+						<div class="collection">
+							<ul>
+								<li class="category-title">collection</li>
+								<li><a href="#">Woman(1725)</a></li>
+								<li><a href="#">Men(635)</a></li>
+								<li><a href="#">Kids(2514)</a></li>
+								<li><a href="#">Comming Soon(76)</a></li>
+							</ul>
+						</div>
+						<div class="site">
+							<ul>
+								<li class="category-title">site</li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Copyright Policy</a></li>
+								<li><a href="#">Press Kit</a></li>
+								<li><a href="#">Support</a></li>
+							</ul>
+						</div>
+						<div class="shop">
+							<ul>
+								<li class="category-title">shop</li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Shipping methods</a></li>
+								<li><a href="#">Career</a></li>
+								<li><a href="#">Contact</a></li>
+								<br>
+							</ul>
+						</div>
+						<div class="social">
+							<ul>
+								<li class="category-title">social</li>
+								<li>Shoper is made with love in Warsaw, <br> 2014 &copy All rights reserved. El Passion</li>
+								<li><a href="#!"><img class="twitter-icon" src="images/Twitter.png"></a>
+									<a href="#!"><img class="facebook-icon" src="images/Facebook.png"></a>
+									<a href="#!"><img class="instagram-icon" src="images/Instagram.png"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
